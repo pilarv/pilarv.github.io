@@ -42,3 +42,13 @@ h2, h3 {
 .pad {
     padding: 0 15px;
 }
+
+#instafeed {
+    padding: 10px 0px 10px 0px;
+}
+
+#instafeed img {
+    padding: 4px;
+    border: #1a1a1a solid 2px;
+    background-color: white;
+}

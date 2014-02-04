@@ -47,6 +47,9 @@
                         <h1>Pilar Vahey</h1>
                         <h2>Private art consultant for Contemporary & Modern Art collectors</h2>
                         <h3>pilarv@gmail.com - 917 270 7709</h2>
+
+                        <div id="instafeed"></div>
+
                     </div>
                 </div>
             </div>
@@ -54,6 +57,7 @@
             <div class="page-header" id="process" name="process">
                 <div class="row text-left">
                     <h3>Process</h3>
+
 
 
                     <p>Our goal is for a deliberate collecting strategy in which clients appreciate the artist’s work and are comfortable with the market.</p>
@@ -88,6 +92,22 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
     <script src="js/vendor/smoothscroll.js"></script>
+    <script src="js/vendor/instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            limit: 4,
+            userId: 187475675,
+            accessToken: '187475675.467ede5.ef8a2cc5f4b34a18bc37468fa79b6c09',
+            clientId: 'aa9291befe2b42d687914e8f35f6cf0c',
+            //get: 'tagged',
+            //tagName: 'bortalami'
+            template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        });
+        userFeed.run();
+    </script>
+
 </body>
 
 </html>
